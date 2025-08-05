@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title data-i18n-key="title">Your Barber Shop</title>
+  <meta name="description" content="Premium modern barbershop in [Your City], India. Explore Services, Pricing & Team.">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="theme-color" content="#e31b23">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Skip link -->
+  <a class="skip-link" href="#main-content" data-i18n-key="skip">Skip to content</a>
+
+  <!-- HEADER + OFF-CANVAS NAV -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="#hero" class="logo" aria-label="Home">
+        <img src="ai-images/demo-logo.png" alt="Demo Logo" width="150" height="50">
+      </a>
+
+      <!-- Language Switch -->
+      <button id="lang-switch" class="lang-switch" aria-label="Switch Language">
+        EN / தமிழ்
+      </button>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Menu" aria-controls="nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Nav -->
+      <nav id="nav-menu" class="nav-menu" hidden>
+        <ul>
+          <li><a href="#hero" data-i18n-key="nav.home">Home</a></li>
+          <li><a href="#about" data-i18n-key="nav.about">About</a></li>
+          <li><a href="#services" data-i18n-key="nav.services">Services</a></li>
+          <li><a href="#pricing" data-i18n-key="nav.pricing">Pricing</a></li>
+          <li><a href="#team" data-i18n-key="nav.team">Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <section id="hero" class="hero" role="region" aria-label="Hero banner">
+      <picture>
+        <source media="(min-width:768px)" data-srcset="ai-images/hero-desktop.jpg">
+        <img class="lazy" data-src="ai-images/hero-mobile.jpg" alt="Barber cutting hair" loading="lazy">
+      </picture>
+      <div class="hero-overlay">
+        <h1 data-i18n-key="hero.title">Elevate Your Look</h1>
+        <p data-i18n-key="hero.subtitle">Precision cuts, modern style — every time.</p>
+        <a href="#services" class="btn" data-i18n-key="hero.cta">Our Services</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about container" role="region" aria-labelledby="about-title">
+      <h2 id="about-title" class="section-title" data-i18n-key="about.title">About Us</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n-key="about.text">
+            Since 1997, <strong>[Your Shop Name]</strong> has served <em>[Your City]</em> with classic techniques & today’s trends.
+          </p>
+        </div>
+        <div class="about-image">
+          <img class="lazy" data-src="ai-images/about.jpg" alt="Interior" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="services container" role="region" aria-labelledby="services-title">
+      <h2 id="services-title" class="section-title" data-i18n-key="services.title">Our Services</h2>
+      <div class="services-grid">
+        <!-- Haircut -->
+        <article class="service-card">
+          <img class="lazy" data-src="ai-images/service-haircut.jpg" alt="Haircut" loading="lazy">
+          <h3 data-i18n-key="services.haircut.title">Expert Haircut</h3>
+          <p data-i18n-key="services.haircut.desc">₹500 – ₹800: Tailored cuts with scalp massage & styling finish.</p>
+        </article>
+        <!-- Shave -->
+        <article class="service-card">
+          <img class="lazy" data-src="ai-images/service-shave.jpg" alt="Shave" loading="lazy">
+          <h3 data-i18n-key="services.shave.title">Straight-Razor Shave</h3>
+          <p data-i18n-key="services.shave.desc">₹600 – ₹900: Hot-towel prep + precision shave + soothing balm.</p>
+        </article>
+        <!-- Beard -->
+        <article class="service-card">
+          <img class="lazy" data-src="ai-images/service-color.jpg" alt="Beard Care" loading="lazy">
+          <h3 data-i18n-key="services.beard.title">Beard Trim & Color</h3>
+          <p data-i18n-key="services.beard.desc">₹700 – ₹1,000: Shape, trim, and subtle color refresh.</p>
+        </article>
+        <!-- Spa -->
+        <article class="service-card">
+          <img class="lazy" data-src="ai-images/service-spa.jpg" alt="Hair Spa" loading="lazy">
+          <h3 data-i18n-key="services.spa.title">Hair Spa Treatment</h3>
+          <p data-i18n-key="services.spa.desc">₹1,200: Deep nourishment & revitalization.</p>
+        </article>
+        <!-- Facial -->
+        <article class="service-card">
+          <img class="lazy" data-src="ai-images/service-facial.jpg" alt="Facial" loading="lazy">
+          <h3 data-i18n-key="services.facial.title">Men’s Facial</h3>
+          <p data-i18n-key="services.facial.desc">₹800: Cleanse, exfoliate & hydrate.</p>
+        </article>
+        <!-- Massage -->
+        <article class="service-card">
+          <img class="lazy" data-src="ai-images/service-massage.jpg" alt="Head Massage" loading="lazy">
+          <h3 data-i18n-key="services.massage.title">Head & Shoulder Massage</h3>
+          <p data-i18n-key="services.massage.desc">₹500: Relaxation & stress relief.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing container" role="region" aria-labelledby="pricing-title">
+      <h2 id="pricing-title" class="section-title" data-i18n-key="pricing.title">Pricing Plans</h2>
+      <div class="pricing-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th data-i18n-key="pricing.service">Service</th>
+              <th data-i18n-key="pricing.standard">Standard (₹)</th>
+              <th data-i18n-key="pricing.premium">Premium (₹)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n-key="pricing.haircut">Adult Haircut</td>
+              <td>500</td>
+              <td>800</td>
+            </tr>
+            <tr>
+              <td data-i18n-key="pricing.shave">Straight-Razor Shave</td>
+              <td>600</td>
+              <td>900</td>
+            </tr>
+            <tr>
+              <td data-i18n-key="pricing.beard">Beard Trim & Color</td>
+              <td>700</td>
+              <td>1000</td>
+            </tr>
+            <tr>
+              <td data-i18n-key="pricing.spa">Hair Spa Treatment</td>
+              <td colspan="2">1200</td>
+            </tr>
+            <tr>
+              <td data-i18n-key="pricing.facial">Men’s Facial</td>
+              <td colspan="2">800</td>
+            </tr>
+            <tr>
+              <td data-i18n-key="pricing.massage">Head & Shoulder Massage</td>
+              <td colspan="2">500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="team container" role="region" aria-labelledby="team-title">
+      <h2 id="team-title" class="section-title" data-i18n-key="team.title">Meet the Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img class="lazy" data-src="ai-images/team-1.jpg" alt="Jane Doe" loading="lazy">
+          <h4 data-i18n-key="team.jane.name">Jane Doe</h4>
+          <p data-i18n-key="team.jane.role">Senior Stylist & Color Specialist</p>
+        </div>
+        <div class="team-member">
+          <img class="lazy" data-src="ai-images/team-2.jpg" alt="John Smith" loading="lazy">
+          <h4 data-i18n-key="team.john.name">John Smith</h4>
+          <p data-i18n-key="team.john.role">Master Barber & Grooming Expert</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- LOCATION -->
+  <section id="location" class="location container" role="region" aria-labelledby="location-title">
+    <h2 id="location-title" class="section-title" data-i18n-key="location.title">
+      Our Location
+    </h2>
+    <div class="location-container">
+      <!-- Business Name -->
+      <h3 class="location-name" data-i18n-key="location.name">
+        Mr.Cutz Mens Beauty parlour
+      </h3>
+
+      <!-- Semantic address block -->
+      <address class="location-address" data-i18n-key="location.address">
+        Arani koot(X) road RTO office, opp. Cheyyar,<br>
+        Tamil Nadu 604407, India
+      </address>
+
+      <!-- Embedded Google Map -->
+      <div class="map-wrapper" aria-label="Map showing our location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d16093.488882734214!2d79.53994910959037!3d12.661869080711243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1672540800000" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Fallback link -->
+      <a href="https://www.google.com/maps/search/?api=1&query=12.661869080711243,79.53994910959037" target="_blank" rel="noopener" class="btn" data-i18n-key="location.viewMap">
+        View on Google Maps
+      </a>
+
+      <!-- small visual break -->
+      <div style="margin-bottom:1rem;" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p data-i18n-key="footer.address">© 2025 [Your Shop Name] — 123 Main St, [Your City]</p>
+      <p data-i18n-key="footer.hours">Mon–Fri: 9 am–6 pm | Sat: 9 am–2 pm | Closed Sunday</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
